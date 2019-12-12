@@ -1,0 +1,11 @@
+<div class="navbar">
+    <div class="nav">
+      <button [(ngModel)]="toggle" ngDefaultControl (click)="toggle(1)">Dodaj Czapkę </button>
+        <button [(ngModel)]="toggle" ngDefaultControl (click)="toggle(2)">Wyświetl</button>
+    </div>
+    <div class="inputs">
+        <app-add-hat *ngIf="componentNumber==1"></app-add-hat>
+        <app-show-hat *ngIf="componentNumber==2"></app-show-hat>
+
+    </div>
+</div>

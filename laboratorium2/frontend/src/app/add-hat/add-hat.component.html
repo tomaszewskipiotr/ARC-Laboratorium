@@ -1,0 +1,21 @@
+<div>
+    <form [formGroup]="hatForm">
+        <label>
+            Firma: <input name="company" type="text" formControlName="company"><br>
+        </label>
+        <label>
+            Materiał: <input name="material" type="text" formControlName="material"><br>
+        </label>
+        <label>
+            Cena: <input name="price" type="text" formControlName="price"><br>
+        </label>
+        <label>
+            Rodzaj: <input name="type" type="text" formControlName="type"><br>
+        </label>
+        <label>
+            Rozmiar: <input name="size" type="text" formControlName="size"><br>
+        </label>
+
+        <input type="submit" (click)="sendHat()" value="Dodaj">
+    </form>
+</div>

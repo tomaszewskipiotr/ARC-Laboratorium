@@ -1,0 +1,20 @@
+<div *ngIf="this.products.length > 0">
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Firma</th>
+            <th>Materiał</th>
+            <th>Cena</th>
+            <th>Rodzaj</th>
+            <th>Rozmiar</th>
+        </tr>
+        <tr *ngFor="let b of products">
+            <th>{{b.company}}</th>
+            <th>{{b.material}}</th>
+            <th>{{b.price}}</th>
+            <th>{{b.type}}</th>
+            <th>{{b.size}}</th>
+        </tr>
+        </thead>
+    </table>
+</div>
